@@ -5,6 +5,7 @@ import { Icons } from "./Icons";
 import NavItems from "@/components/NavItems";
 import { buttonVariants } from "./ui/button";
 import { Ghost } from "lucide-react";
+import Cart from "./Cart";
 
 const Navbar = () => {
   const user = null;
@@ -37,6 +38,7 @@ const Navbar = () => {
                     <span className="h-6 w-px bg-gray-300" aria-hidden="true" />
                   )} */}
                   {user ? <p></p> : <Link href="/sign-up" className={buttonVariants({variant:'ghost'})} >Create Account</Link>}
+                  <Cart/>
                 </div>
               </div>
             </div>
